@@ -1,0 +1,5 @@
+<div class="movie">
+  <app-movie-card *ngFor="let movie of (movies$ | async).movies"
+  [movie] = "movie">
+  </app-movie-card>
+</div>

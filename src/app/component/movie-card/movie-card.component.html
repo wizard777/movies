@@ -1,0 +1,19 @@
+ 
+
+<div *ngIf="movie" class='movie' [routerLink]="'/' + movie.title"  >
+    <img [src]="movie.posterUrl" 
+    onError="this.onError=null; this.src='https://placeimg.com/300/400/animals'">
+    <h3>{{movie.year}}</h3>
+    <p><strong>Genres: </strong>
+      {{movie.genres}}
+    </p>
+    <p><strong>Director: </strong>
+      {{movie.director}}
+    </p>
+    <p><strong>Actors: </strong>
+      {{movie.actors}}
+    </p>
+    <p><strong>Plot: </strong>
+      {{movie.plot}}
+    </p>
+  </div> 

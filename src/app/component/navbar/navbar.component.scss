@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+
+  h2 {
+    font-size: 1rem;
+  }
+  
+
+  div{
+    font-weight:600 ;
+    span {
+      font-size: .6rem;
+      font-weight:300 ;
+    }
+  }
+
+  :host-context( .light) nav{
+    background-color: var(--light-elem);
+  }
+
+  :host-context( .dark) nav{
+    background-color: var(--dark-elem);
+  }
+}
