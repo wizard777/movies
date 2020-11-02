@@ -8,12 +8,13 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class NavbarComponent{
 
+  txt = false;
   constructor(private themeService: ThemeService) { }
 
   // tslint:disable-next-line:typedef
   toggleTheme() {
     this.themeService.toggleStyle();
-
+    this.txt = !this.txt;
   }
 
 

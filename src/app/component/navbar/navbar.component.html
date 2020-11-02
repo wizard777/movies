@@ -1,9 +1,13 @@
 <nav class="shadow">
     <h2>Movies</h2>
 
-    <div (click) ="toggleTheme()">
-    <span class="fa fa-moon-o"></span>
-    {{' '}}
-        <span>Dark mode</span>
+    <div (click)="toggleTheme()">
+        <div *ngIf="txt ;else light">
+            <span class="fa fa-moon-o"></span>{{' '}}
+            <span>Dark mode</span>
+        </div>
+        <ng-template #light>
+            <span class="fa fa-sun-o"></span> {{' '}}
+            <span>Light mode</span> </ng-template>
     </div>
 </nav>

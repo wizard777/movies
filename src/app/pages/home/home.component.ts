@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
 
    movies$: Observable<Movies[]>;
 
+
+
   constructor( private api: ApiService) { }
 
   ngOnInit(): void {
